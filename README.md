@@ -1,6 +1,3 @@
-Here’s a project description you can use for your GitHub repository:
-
----
 
 # Calculator Project
 
