@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="light-mode">
+
+    <div class="calculator">
+        <div class="theme-indicator">
+            <button onclick="toggleTheme()">🌞 | 🌙</button>
+            <span id="theme-mode">Light Mode</span>
+        </div>
+        <div class="display">
+            <div class="calculation" id="calculation"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        <div class="buttons">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="percent()">%</button>
+            <button onclick="square()">x²</button>
+            <button onclick="sqrt()">√</button>
+            <button onclick="input('7')">7</button>
+            <button onclick="input('8')">8</button>
+            <button onclick="input('9')">9</button>
+            <button onclick="input('*')">*</button>
+            <button onclick="input('4')">4</button>
+            <button onclick="input('5')">5</button>
+            <button onclick="input('6')">6</button>
+            <button onclick="input('+')">+</button>
+            <button onclick="input('1')">1</button>
+            <button onclick="input('2')">2</button>
+            <button onclick="input('3')">3</button>
+            <button onclick="input('-')">−</button>
+            <button onclick="input('.')">.</button>
+            <button onclick="input('0')">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="input('/')">/</button>
+            <!--
+            <button onclick="deleteLast()">⌫</button> 
+            -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

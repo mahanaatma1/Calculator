@@ -1,0 +1,108 @@
+:root {
+    --background-color-light: #f4f4f4;
+    --background-color-dark: #222;
+    --text-color-light: #000;
+    --text-color-dark: #fff;
+    --button-background-light: #f0f0f0;
+    --button-background-dark: #333;
+    --button-color-dark: #222;
+    --button-color-light: #fff;
+    --accent-color: #00d090;
+}
+
+body.light-mode {
+    --background-color: var(--background-color-light);
+    --text-color: var(--text-color-light);
+    --button-background: var(--button-background-light);
+}
+
+body.dark-mode {
+    --background-color: var(--background-color-dark);
+    --text-color: var(--text-color-dark);
+    --button-background: var(--button-background-dark);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 320px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--background-color);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.theme-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.theme-indicator span {
+    font-size: 0.9rem;
+}
+
+.display {
+    background-color: var(--button-background);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.display .calculation {
+    text-align: right;
+    opacity: 0.6;
+}
+
+.display .result {
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    background-color: var(--button-background);
+    color: var(--text-color);
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-dark);
+}
+
+
+/* Adjusted button sizes */
+
+button:nth-child(17) {
+    grid-column: span 1;
+}
+
+button:nth-child(1) {
+    background-color: #9BC4DE;
+}
+
+button:nth-child(19) {
+    background-color: #9BC4DE;
+}
